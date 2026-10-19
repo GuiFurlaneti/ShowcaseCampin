@@ -6,6 +6,10 @@ Plataforma web para gestão de campanhas de distribuição e de equipes de campo
 >
 > O código-fonte é privado. Este repositório é a apresentação técnica pública do projeto e **não contém o código da aplicação**.
 
+📄 **[Ler o case técnico completo — PDF, 13 páginas](docs/Campin_Case_Tecnico_PUBLICO_2026.pdf)**: problema, arquitetura, telas, decisões técnicas e limites do que é afirmado. · Portfólio: [guifurlaneti.github.io/portfolio](https://guifurlaneti.github.io/portfolio/)
+
+![Dashboard do Campin com indicadores, calendário de campanhas e status das equipes (dados demonstrativos)](screenshots/dashboard.webp)
+
 ---
 
 ## Problema
@@ -25,9 +29,34 @@ O Campin reúne em uma única aplicação web o cadastro de campanhas, a gestão
 
 Identifiquei a necessidade, idealizei a solução e desenvolvo o frontend, a API REST e a modelagem do banco de dados.
 
+## Telas (dados demonstrativos)
+
+As capturas abaixo usam dados fictícios ou de teste. Os números exibidos não representam resultados de operação.
+
+<details>
+<summary><strong>Ver as demais telas</strong></summary>
+
+**Planejamento e gestão de campanhas** — checklist de preparação, período, lojas e andamento.
+
+![Tela de uma campanha com checklist de pendências, dados do cliente e progresso das lojas](screenshots/campanhas.webp)
+
+**Evidências fotográficas e mapa** — fotos de campo vinculadas à campanha e pontos no mapa (mapa desfocado).
+
+![Fotos de campo de uma campanha e mapa desfocado com os pontos dos registros](screenshots/evidencias-mapa.webp)
+
+**Relatórios e indicadores** — consolidação por campanha e galeria de fotos.
+
+![Relatório de campanha com indicadores, resumo por dia e fotos registradas](screenshots/relatorios.webp)
+
+**Interfaces móveis de campo e cliente** — rota do promotor, registro do turno e portal do cliente.
+
+![Quatro telas móveis: rota do promotor, registro de turno, lista de campanhas e detalhe no portal do cliente](screenshots/mobile-portal-cliente.webp)
+
+</details>
+
 ## Principais funcionalidades
 
-Funcionalidades presentes na versão atual:
+Funcionalidades presentes no código da versão atual. A lista indica o que está implementado, não o volume de uso de cada recurso na operação.
 
 | Módulo | O que faz |
 |--------|-----------|
@@ -39,6 +68,8 @@ Funcionalidades presentes na versão atual:
 | **Relatórios** | Indicadores por campanha (promotores, turnos, cobertura de lojas, fotos e média de horas por turno), filtros por status e período e exportação em CSV |
 | **Tutoriais** | Central de tutoriais em vídeo para os usuários |
 | **Notificações** | Ativação de notificações no navegador |
+| **Portal do cliente** | Acesso do perfil cliente às suas campanhas, evidências e mapa da operação |
+| **Exportações** | Exportação de relatório da campanha em PDF e download das fotos em ZIP |
 
 ## Tecnologias
 
@@ -77,7 +108,7 @@ O código da aplicação (frontend, API e banco de dados) é mantido em reposit�
 
 ## Autor
 
-**Guilherme Furlaneti** — Desenvolvedor Backend
+**Guilherme Furlaneti** — Desenvolvedor Full Stack
 
 - Portfólio: [guifurlaneti.github.io/portfolio](https://guifurlaneti.github.io/portfolio/)
 - LinkedIn: [linkedin.com/in/gui-furlaneti](https://www.linkedin.com/in/gui-furlaneti/)
